@@ -1,4 +1,5 @@
 PyPattern
 =========
 
-Design patterns in python
+Design patterns in Python.  
+Base on *Head First Design Pattern*.
