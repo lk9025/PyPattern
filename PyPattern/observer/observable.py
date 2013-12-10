@@ -18,7 +18,7 @@ class GameData(Observable):
         self._observers = []
         self._home_team = home_team
         self._visiting_team = visiting_team
-        self._home_team_socre = 0
+        self._home_team_score = 0
         self._visiting_team_score = 0
 
     def register_observer(self, observer):
@@ -32,8 +32,8 @@ class GameData(Observable):
         for observer in self._observers:
             observer.update(self, None)
 
-    def update(self, home_team_socre, visiting_team_score):
-        self._home_team_socre = home_team_socre
+    def update(self, home_team_score, visiting_team_score):
+        self._home_team_score = home_team_score
         self._visiting_team_score = visiting_team_score
         self.notify_observers()
 
@@ -43,8 +43,8 @@ class GameData(Observable):
     def visiting_team(self):
         return self._visiting_team
 
-    def home_team_socre(self):
-        return self._home_team_socre
+    def home_team_score(self):
+        return self._home_team_score
 
     def visiting_team_score(self):
         return self._visiting_team_score
