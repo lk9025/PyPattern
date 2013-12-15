@@ -1,20 +1,20 @@
 from pizzastore import *
 
-separator = '-' * 10
+seperator = '-' * 10
 
 NY_pizza_store = NYPizzaStore()
 Chicago_pizza_store = ChicagoPizzaStore()
 
 pizza = NY_pizza_store.order_pizza('cheese')
-print separator
+print seperator
 
 pizza = NY_pizza_store.order_pizza('clam')
-print separator
+print seperator
 
 pizza = NY_pizza_store.order_pizza('veggies')
-print separator
+print seperator
 
 pizza = Chicago_pizza_store.order_pizza('pepperoni')
-print separator
+print seperator
 
 pizza = Chicago_pizza_store.order_pizza('veggies')
